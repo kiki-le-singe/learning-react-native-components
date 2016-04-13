@@ -22,6 +22,7 @@ export default class Navigation extends Component {
     return (
       <Navigator
         initialRoute={{ message: 'My First Scene', id: 'scene1' }}
+        style={ styles.navigator }
         sceneStyle={ styles.scene }
         renderScene={ this.renderScene }
       />
@@ -30,6 +31,9 @@ export default class Navigation extends Component {
 }
 
 const styles = StyleSheet.create({
+  navigator: {
+    flex: 1,
+  },
   scene: {
     padding: 5,
   },
