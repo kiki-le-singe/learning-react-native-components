@@ -4,14 +4,11 @@ import React, {
   View,
 } from 'react-native';
 
-import NavMenu from '../../components/NavMenu';
-
 export default class Scene2 extends Component {
   render() {
     return (
-      <View>
-        <NavMenu {...this.props} />
-        <Text>Scene 2</Text>
+      <View style={styles.container}>
+        <Text style={styles.text}>Scene 2</Text>
       </View>
     );
   }
