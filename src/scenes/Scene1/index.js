@@ -1,4 +1,5 @@
 import React, {
+  StyleSheet,
   Component,
   Text,
   View,
@@ -13,3 +14,15 @@ export default class Scene1 extends Component {
     );
   }
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: 'blue',
+  },
+  text: {
+    color: 'white',
+  },
+});
