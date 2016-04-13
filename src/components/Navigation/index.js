@@ -1,4 +1,4 @@
-import React, { Component, Navigator } from 'react-native';
+import React, { StyleSheet, Component, Navigator } from 'react-native';
 
 import Scene1 from '../../scenes/Scene1';
 import Scene2 from '../../scenes/Scene2';
@@ -22,8 +22,15 @@ export default class Navigation extends Component {
     return (
       <Navigator
         initialRoute={{ message: 'My First Scene', id: 'scene1' }}
+        sceneStyle={ styles.scene }
         renderScene={ this.renderScene }
       />
     );
   }
 }
+
+const styles = StyleSheet.create({
+  scene: {
+    padding: 5,
+  },
+});
