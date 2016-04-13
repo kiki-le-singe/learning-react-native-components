@@ -1,30 +1,13 @@
-import React, {
-  Component,
-  StyleSheet,
-  Text,
-  View,
-} from 'react-native';
+import React, { Component, View } from 'react-native';
 
-import TextView from './components/views/TextView';
-import TouchableHighlightView from './components/views/TouchableHighlightView';
-import SimpleListView from './components/views/SimpleListView';
+import Navigation from './components/Navigation';
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: 'center',
-    paddingTop: 30,
-  },
-});
+// http://blog.paracode.com/2016/01/05/routing-and-navigation-in-react-native/
 
 export default class ReactNativeComponents extends Component {
   render() {
     return (
-      <View style={styles.container}>
-        <TextView />
-        <TouchableHighlightView />
-        <SimpleListView />
-      </View>
+      <Navigation />
     );
   }
 }
